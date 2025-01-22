@@ -90,5 +90,9 @@ console.log(potion)
 potion.pop();
 console.log(potion);
 
-
-
+//afficher potion de soin en objet 
+let potionSoin = {
+    nom: "Potion de soin",
+    prix: 15,
+    stock: 100
+};
