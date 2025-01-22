@@ -5,6 +5,8 @@ let boutiqueOuverte = true;
 let quantitePotion = prompt("veuillez saisir le nombre de potion") ;
 let prixTotal = prixPotionDeSoin*quantitePotion;
 let BourseAventurier= 300
+let objet= { nom: 'Potion de Mana'}
+
 
 if (boutiqueOuverte) {
     console.log("Bienvenue dans la boutique <La Bonne Potion> Aventurier ! 🎉 !");
@@ -69,3 +71,7 @@ console.log= ("La derniere potion est" + potion[potion.lenght-1])
 for (let i = 0; i < potion.lenght; i++) {
     console.log(potion[i]);
 }
+
+potion.push(objet);
+console.log(potion)
+
