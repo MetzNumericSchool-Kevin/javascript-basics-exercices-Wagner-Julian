@@ -96,3 +96,8 @@ let potionSoin = {
     prix: 15,
     stock: 100
 };
+
+// affiche les informaitons de la potion
+
+console.log(potionSoin.nom); 
+console.log(potionSoin["prix"]);
