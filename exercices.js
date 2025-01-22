@@ -2,7 +2,8 @@ const MaBoutique = "La Bonne Potions"
 let potionsDeSoinsEnStock = 100;
 let prixPotionDeSoin = 15.99;
 let boutiqueOuverte = true;
-let quantitePotion = 50 ;
+let quantitePotion = prompt("veuillez saisir le nombre de potion") ;
+let prixTotal = prixPotionDeSoin*quantitePotion;
 
 if (boutiqueOuverte) {
     console.log("Bienvenue dans la boutique <La Bonne Potion> Aventurier ! 🎉 !");
@@ -31,14 +32,16 @@ case 2:
     break
 
 case 3:
-    console.log("Le prix d'une potion de soin est de : 25 pièces d'or.");
+    console.log("Le prix d'une potion de soin est de : 15.99.");
     break;
 
 case 4:
-    console.log("La quantité d'une potion de soin est de : 3 flacons disponibles.");
+    console.log("La quantité d'une potion de soin est de : 50 ml.");
     break;
 
 default:
     console.log("Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕");
     break;
 }
+
+console.log(`Prix de ${quantitePotion} potions de soins : ${prixTotal.toFixed(2)} 🪙 mon cher Aventurier. 💸`);
