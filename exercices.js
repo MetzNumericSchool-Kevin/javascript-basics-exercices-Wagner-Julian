@@ -61,3 +61,11 @@ if (quantitePotion > potionsDeSoinsEnStock) {
     console.log(`Il vous reste ${bourseAventurier.toFixed(2)} 🪙 dans votre bourse.`);
     console.log(`Il reste ${potionsDeSoinsEnStock} potions de soins en stock.`);
 }
+
+
+let potion = ["Potion de soin", "Potion de soin majeur", "Potion de guerison" , "Potion currative"]; 
+console.log= ( "La premier potion est" + potion[0])
+console.log= ("La derniere potion est" + potion[potion.lenght-1])
+for (let i = 0; i < potion.lenght; i++) {
+    console.log(potion[i]);
+}
