@@ -1,3 +1,5 @@
+//Variables
+
 const MaBoutique = "La Bonne Potions"
 let potionsDeSoinsEnStock = 100;
 let prixPotionDeSoin = 15;
@@ -7,12 +9,15 @@ let prixTotal = prixPotionDeSoin*quantitePotion;
 let BourseAventurier= 300
 let objet= { nom: 'Potion de Mana'}
 
-
+//Boutique ouerte ou fermer 
 if (boutiqueOuverte) {
     console.log("Bienvenue dans la boutique <La Bonne Potion> Aventurier ! 🎉 !");
 } else {
     console.log("La boutique <La Bonne Potion> est fermée, revenez plus tard Aventurier ! 😴.");
 }
+
+//Affichage conditionnel avec switch
+
 function afficherMenu() {
     console.log("Bienvenue dans mon humble boutique Aventurier. Que veux-tu savoir ? 🤔");
     console.log("1. Le nom de la boutique");
@@ -46,8 +51,12 @@ default:
     console.log("Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕");
     break;
 }
+// prix total
+
 
 console.log(`Prix de ${quantitePotion} potions de soins : ${prixTotal.toFixed(2)} 🪙 mon cher Aventurier. 💸`);
+
+//Bourse d el'aventurier
 
 if (quantitePotion > potionsDeSoinsEnStock) {
     console.log("Désolé, il n'y a pas assez de potions en stock pour satisfaire votre demande.");
@@ -64,6 +73,7 @@ if (quantitePotion > potionsDeSoinsEnStock) {
     console.log(`Il reste ${potionsDeSoinsEnStock} potions de soins en stock.`);
 }
 
+//affichage potion
 
 let potion = ["Potion de soin", "Potion de soin majeur", "Potion de guerison" , "Potion currative"]; 
 console.log= ( "La premier potion est" + potion[0])
@@ -71,7 +81,14 @@ console.log= ("La derniere potion est" + potion[potion.lenght-1])
 for (let i = 0; i < potion.lenght; i++) {
     console.log(potion[i]);
 }
+//Ajout potion
 
 potion.push(objet);
 console.log(potion)
+
+// supprimer potion
+potion.pop();
+console.log(potion);
+
+
 
