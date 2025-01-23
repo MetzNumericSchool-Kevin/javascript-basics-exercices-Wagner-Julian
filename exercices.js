@@ -101,3 +101,11 @@ let potionSoin = {
 
 console.log(potionSoin.nom); 
 console.log(potionSoin["prix"]);
+
+//Inventaire
+const inventaire = [
+    {nom:"Potion de soin", prix: 15, stock: 100},
+    {nom:"Potion de soin majeur", prix: 30, stock: 100},
+    {nom:"Potion de guerison", prix: 10, stock: 100},
+    {nom:"Potion currative", prix: 40, stock: 100},
+]
